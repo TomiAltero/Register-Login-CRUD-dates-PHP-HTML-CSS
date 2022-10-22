@@ -19,7 +19,7 @@
             <div class="model-inputs">
             <hr>
 
-            <form action="insert.php" method="POST" class="modal-content">
+            <form action="insert.php" action="page.php" method="POST" class="modal-content">
             <label for="lblName"><b>Nombre Completo:</b></label>
             <input type="text" placeholder="Ingrese su nombre completo" name="name" required>
 

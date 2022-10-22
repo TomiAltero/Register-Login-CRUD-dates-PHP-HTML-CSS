@@ -1,0 +1,54 @@
+.container-table{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+table, th, td {
+    border: 1px solid;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+
+th {
+    padding: 5px 30px;
+    background-color: rgb(133, 130, 123);
+}
+
+
+
+td {
+    padding: 15px 35px;
+}
+
+td a  {
+    color: black;
+    font-weight: bolder;
+
+}
+
+
+.a-update {
+    color: green;
+}
+
+.a-delete {
+    color: red;
+}
+  
+
+.h-class {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+hr {
+    width: 50%;
+    box-shadow: 2px;
+    background-color:salmon ;
+}

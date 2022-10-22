@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style-login.css">
+    <link rel="stylesheet" href="../style_login.css">
     <title>Document</title>
 </head>
 <body>
         <div class="div-form">
-            <form class="form-class" action="insert-login.php" method="post">
+            <form class="form-class" action="page.php" method="post">
                 
             <div class="div-title">
                 <h1>Inicia Sesión</h1>
+                <div class="container-message1">
+                <p class="p-message-register">¿Desea registrarse? <a class="a-message-register" href="register.php">Regístrate</a></p>
+                </div>
                 <hr>
             </div>
             

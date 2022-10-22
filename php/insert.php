@@ -27,12 +27,46 @@
         exit();
 
     }
+    $conteo_pal = str_word_count($username);
 
+    if($conteo_pal >= 2) {
+        echo "<script>
+        alert('No se permite el uso de espacio en blanco');
+        window.location(register.php);
+        </script>
+    "   ;
+    exit();
+    }
+
+
+
+    if (strlen($nombre)>0 && strlen($nombre) < 5) {
+        echo "<script>
+        alert('El nombre posee menos de 5 caracteres');
+        window.location(register.php);
+        </script>
+    "   ;
+        exit();
+        
+    }
+
+    $patron = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-_";
+
+
+    for($i = 0; $i < strlen($username); $i++) {
+        if(strpos($patron , substr($username , $i , 1))=== false) {
+            echo "<script>
+            alert('No se permiten caracteres especiales');
+            window.location(register.php);
+            </script>
+        "   ;
+        exit();
+        } 
+    }
 
 
     $queryInsert = mysqli_query($conn , $sql);
     if($queryInsert == true) {
-        echo "<h3>Se han agregado los datos correctamente</h3>";
         header("Location: login.php");
 
     }else {
